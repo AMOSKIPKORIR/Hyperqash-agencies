@@ -94,7 +94,7 @@ nav ul li a {
     position: relative;
     overflow: hidden;
     text-align: center;
-    max-width: 60%; /* Ensure slider does not exceed its container width */
+    max-width: 90%; /* Ensure slider does not exceed its container width */
     margin: 0 auto; /* Center the slider horizontally */
 }
 
