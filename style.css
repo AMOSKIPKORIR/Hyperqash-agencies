@@ -14,7 +14,7 @@ header {
 }
 
 .logo img {
-    max-width: 100px; /* Adjust as needed */
+    max-width: 50px; /* Adjust as needed */
 }
 
 nav ul {
@@ -44,7 +44,7 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(90, 92%, 47%); /* Yellow background color */
+    background-color: hsl(90, 97%, 48%); /* Yellow background color */
     border-radius: 10px; /* Example border radius */
     padding: 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Example box shadow */
