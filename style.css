@@ -1,0 +1,510 @@
+/* Reset some default browser styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for header */
+header {
+    text-align: center;
+    background-color: #d9e6c7; /* Example background color */
+    padding: 20px 0;
+}
+
+.logo img {
+    max-width: 100px; /* Adjust as needed */
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Example text color */
+    font-size: 18px; /* Example font size */
+}
+
+/* Main section styling */
+.main-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #7d79ce; /* Yellow background color */
+    border-radius: 10px; /* Example border radius */
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Example box shadow */
+}
+
+.main-text {
+    margin-bottom: 20px;
+}
+
+.main-text h1 {
+    font-size: 2.5em; /* Example font size */
+    color: #333; /* Example text color */
+}
+
+.main-text p {
+    font-size: 1.2em; /* Example font size */
+    margin-bottom: 10px;
+    color: #555; /* Example text color */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffc107; /* Yellow button color */
+    color: #333; /* Example text color */
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ffca28; /* Lighter shade of yellow on hover */
+}
+
+.cta-button.secondary {
+    background-color: #28a745; /* Example secondary button color */
+}
+
+.main-image img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto;
+}
+/* Existing styles... */
+
+/* Slideshow container */
+.main-image {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+    overflow: hidden;
+    margin: auto; /* Center the container */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 200%; /* Ensure slides fit in the container */
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0; /* Prevent shrinking of slides */
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+/** feature section **/
+
+.feature {
+    margin-top: 90px;
+    background: #fff;
+}
+
+.feature .titlepage h2 {
+    margin-bottom: 20px;
+}
+
+.feature .feature_box {
+    text-align: center;
+}
+
+.feature .feature_box figure img {
+    width: 100%;
+}
+
+.feature .feature_box .read_more {
+    background: #000;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.feature .feature_box .read_more:hover {
+    background: #da33e2;
+}
+
+.read_more {
+    font-size: 17px;
+    background-color: #fff;
+    color: #000;
+    padding: 13px 0px;
+    width: 100%;
+    max-width: 190px;
+    text-align: center;
+    display: inline-block;
+    transition: ease-in all 0.5s;
+}
+
+.read_more:hover {
+    background: #000;
+    color: #fff;
+    transition: ease-in all 0.5s;
+}
+
+/** customer section **/
+
+.customer {
+    margin-top: 90px;
+    padding-bottom: 120px;
+    background: #a58c8c30;
+}
+
+.customer .titlepage h2 {
+    padding-bottom: 15px;
+}
+
+.customer_Carousel .carousel-caption {
+    position: inherit;
+    padding: 0;
+}
+
+.customer_box {
+    background: #0c0f38;
+}
+
+.test_box {
+    background: #fff;
+    box-shadow: #ddd 0px 0px 10px -1px;
+    margin-top: 13px;
+}
+
+.customer_Carousel .test_box .veni h4 {
+    font-size: 30px;
+    color: #fff;
+    line-height: 32px;
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.customer_Carousel .test_box p {
+    font-size: 17px;
+    line-height: 28px;
+    color: #797878;
+    font-weight: 400;
+    text-align: left;
+    padding: 40px 25px;
+}
+
+.customer_Carousel .test_box .veni {
+    padding-top: 45px;
+    display: inline-block;
+}
+
+.customer_Carousel .carousel-indicators {
+    bottom: -52px;
+}
+
+.customer_Carousel .carousel-indicators li {
+    width: 22px;
+    height: 22px;
+    border-radius: 20px;
+    background: #0c0f38;
+}
+
+.customer_Carousel .carousel-indicators li.active {
+    background: #da33e2;
+}
+
+/** request section **/
+
+.request {
+    padding: 90px 0;
+    background: #f4f5fe;
+}
+
+.pink {
+    color: #da33e2;
+}
+
+.request .titlepage h2 {
+    padding-bottom: 15px;
+}
+
+.request .titlepage span {
+    font-size: 17px;
+    line-height: 28px;
+}
+
+ul.social_infomision {
+    text-align: center;
+}
+
+ul.social_infomision li a {
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 48px;
+    line-height: 49px;
+    color: #0c0f38;
+    font-weight: bold;
+}
+
+ul.social_infomision li img {
+    padding-right: 15px;
+    width: 80px;
+}
+
+/** footer **/
+/** footer **/
+
+.multi {
+    color: #2bcc91;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.footer {
+    border-top: #000 solid 1px;
+    font-family: Poppins;
+    background: #7276a9;
+    padding-top: 50px;
+}
+
+.cont {
+    text-align: center;
+}
+
+.cont h3 {
+    color: #fff;
+    font-size: 37px;
+    line-height: 55px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    display: block;
+}
+
+.cont span {
+    color: #fff;
+    font-size: 16px;
+}
+
+ul.social_icon {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 25px;
+}
+
+ul.social_icon li {
+    float: left;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 20px;
+}
+
+ul.social_icon li a {
+    color: #0c0f38;
+    width: 50px;
+    height: 50px;
+    border: solid #fff 1px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 100%;
+    font-size: 30px;
+    background: #fff;
+}
+
+ul.social_icon li a:hover {
+    background: #d434e3;
+    border: solid #d434e3 1px;
+    color: #fff;
+}
+/* social */
+.social_icon {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Center align the list items */
+}
+
+.social_icon li {
+    display: inline-block; /* Display items horizontally */
+    margin-right: 10px; /* Add some space between items */
+}
+
+.social_icon li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.social_icon img {
+    width: 40px; /* Adjust the size of the social icons as needed */
+    height: auto;
+}
+
+.copyright {
+    margin-top: 43px;
+    padding: 20px 0px;
+    background-color: #fff;
+}
+
+.copyright p {
+    color: #0c0f38;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.copyright a {
+    color: #0c0f38;
+}
+
+.copyright a:hover {
+    color: #d434e3;
+}
+/* addition */
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #666;
+}
+
+/* Customer Section */
+.customer {
+    margin-top: 90px;
+    padding-bottom: 120px;
+    background: #a58c8c30;
+}
+
+.customer .titlepage {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.customer .titlepage h2 {
+    font-size: 24px;
+    color: #0c0f38;
+    line-height: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.customer .titlepage h2 .pink {
+    color: #da33e2;
+}
+
+.customer .titlepage span {
+    display: block;
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.carousel-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-item .test_box {
+    background: #fff;
+    box-shadow: #ddd 0px 0px 10px -1px;
+    margin-top: 13px;
+    padding: 20px;
+}
+
+.carousel-item .test_box p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.carousel-item .customar_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item .customar_box .veni {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.carousel-item .customar_box .veni img {
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.carousel-item .customar_box .veni h4 {
+    font-size: 20px;
+    color: #333;
+}
+
+.carousel-item .customar_box .padd_rightt0 img {
+    height: 40px;
+    width: 40px;
+}
+
+.carousel-indicators li {
+    background-color: #bbb;
+}
+
+.carousel-indicators li.active {
+    background-color: #717171;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333;
+}
+
+.pink {
+    color: #da33e2;
+}
