@@ -1,31 +1,32 @@
 let slideIndex = 0;
 const slides = document.querySelectorAll('.slide');
-const dots = document.querySelectorAll('.dot');
+const totalSlides = slides.length;
 
 function showSlides() {
-    // Calculate the new translateX value
-    const translateXValue = -slideIndex * 100;
-
-    // Apply the transform to the slides container
-    document.querySelector('.slides').style.transform = `translateX(${translateXValue}%)`;
-
-    // Remove active class from all dots
-    dots.forEach(dot => dot.classList.remove('active'));
-
-    // Add active class to the current dot
-    dots[slideIndex].classList.add('active');
-
-    // Increment slideIndex, reset if it's the last slide
-    slideIndex = (slideIndex + 1) % slides.length;
-
-    // Call showSlides again after 3 seconds
-    setTimeout(showSlides, 3000);
+    slideIndex++;
+    if (slideIndex >= totalSlides) {
+        slideIndex = 0;
+    }
+    updateSlideDisplay();
 }
 
-function currentSlide(index) {
-    slideIndex = index;
-    showSlides();
+function updateSlideDisplay() {
+    const slideWidth = slides[0].clientWidth;
+    const offset = slideIndex * slideWidth * -1;
+    document.querySelector('.slides').style.transform = `translateX(${offset}px)`;
+
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach((dot, index) => {
+        if (index === slideIndex) {
+            dot.classList.add('active');
+        } else {
+            dot.classList.remove('active');
+        }
+    });
 }
 
-// Initial call to start slideshow
+// Initial call to start the slideshow
 showSlides();
+
+// Set interval to repeat slideshow
+setInterval(showSlides, 3000); // Change slide every 3 seconds (adjust as needed)
