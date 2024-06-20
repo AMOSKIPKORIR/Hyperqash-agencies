@@ -14,7 +14,7 @@ header {
 }
 
 .logo img {
-    max-width: 50px; /* Adjust as needed */
+    max-width: 30px; /* Adjust as needed */
 }
 
 nav ul {
@@ -94,14 +94,14 @@ nav ul li a {
     position: relative;
     overflow: hidden;
     text-align: center;
-    max-width: 100%; /* Ensure slider does not exceed its container width */
+    max-width: 60%; /* Ensure slider does not exceed its container width */
     margin: 0 auto; /* Center the slider horizontally */
 }
 
 .slides {
     display: flex;
     width: 300%; /* Ensure enough space for three slides (3 * 100%) */
-    transition: transform 0.5s ease; /* Smooth transition for slide animation */
+    transition: transform 2.0s ease; /* Smooth transition for slide animation */
 }
 
 .slide {
@@ -130,7 +130,7 @@ nav ul li a {
 }
 
 .dot.active {
-    background-color: #717171;
+    background-color: #d51919;
 }
 
 
