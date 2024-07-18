@@ -1,4 +1,128 @@
+
+
+         body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            text-align: center;
+
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            
+        }
+
+        .titlepage h2,
+        .titlepage h1 {
+            font-weight: 700;
+            color: #21e932;
+        }
+
+        .titlepage .pink {
+            color: #e91e63;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        .advantages ul,
+        .titlepage ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .advantages li,
+        .titlepage li {
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .advantages li::before,
+        .titlepage li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #e91e63;
+        }
+
+        .activation p,
+        .worldwide p {
+            font-weight: 700;
+        }
+
+        .feature_box figure img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .read_more {
+            display: inline-block;
+            background: #e91e63;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+            transition: background 0.3s;
+        }
+
+        .read_more:hover {
+            background: #c2185b;
+        }
+
+        .read_more .fa-whatsapp {
+            margin-right: 5px;
+        }
+
+
+
+li {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #b0e818;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+a:hover {
+    background-color: #b35a00;
+    transform: scale(1.05);
+}
+a:active {
+    transform: scale(0.95);
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* Reset some default browser styles */
+
 
 * {
     margin: 0;
@@ -44,7 +168,7 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(90, 97%, 48%); /* Yellow background color */
+    background-color: hsl(200, 66%, 77%); /* Yellow background color */
     border-radius: 10px; /* Example border radius */
     padding: 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Example box shadow */
@@ -94,7 +218,7 @@ nav ul li a {
     position: relative;
     overflow: hidden;
     text-align: center;
-    max-width: 90%; /* Ensure slider does not exceed its container width */
+    max-width: 70%; /* Ensure slider does not exceed its container width */
     margin: 0 auto; /* Center the slider horizontally */
 }
 
@@ -136,50 +260,6 @@ nav ul li a {
 
 /** feature section **/
 
-.feature {
-    margin-top: 90px;
-    background: #fff;
-}
-
-.feature .titlepage h2 {
-    margin-bottom: 20px;
-}
-
-.feature .feature_box {
-    text-align: center;
-}
-
-.feature .feature_box figure img {
-    width: 100%;
-}
-
-.feature .feature_box .read_more {
-    background: #000;
-    color: #fff;
-    margin-top: 40px;
-}
-
-.feature .feature_box .read_more:hover {
-    background: #da33e2;
-}
-
-.read_more {
-    font-size: 17px;
-    background-color: #fff;
-    color: #000;
-    padding: 13px 0px;
-    width: 100%;
-    max-width: 190px;
-    text-align: center;
-    display: inline-block;
-    transition: ease-in all 0.5s;
-}
-
-.read_more:hover {
-    background: #000;
-    color: #fff;
-    transition: ease-in all 0.5s;
-}
 
 /** customer section **/
 
@@ -594,4 +674,24 @@ body {
 
 .popup-content button:last-of-type:hover {
     background-color: #27ae60;
+}
+/*target marketing*/
+
+/*end of target marketing*/
+.unique-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.unique-video-section {
+    text-align: center; /* Center align content */
+    margin-top: 20px; /* Example margin */
+}
+
+.unique-video {
+    max-width: 100%; /* Ensure video doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
 }
